@@ -4,12 +4,12 @@
 
 ## 技能列表
 
-| 技能 | 描述 | 难度 |
-|------|------|------|
-| [git-workflow](skills/git-workflow/SKILL.md) | Git 分支策略、提交规范、rebase/squash 最佳实践 | 入门 |
-| [code-review-assistant](skills/code-review-assistant/SKILL.md) | 提交前代码审查：预审问题发现、分类、修复建议 | 进阶 |
-| [template-scaffolder](skills/template-scaffolder/SKILL.md) | 项目模板生成器：Node/React/Python 项目骨架快速搭建 | 入门 |
-| [prompt-optimizer](skills/prompt-optimizer/SKILL.md) | Claude Code prompt 优化：从模糊需求到精准指令 | 进阶 |
+| 技能 | 描述 | 难度 | 来源 |
+|------|------|------|------|
+| [git-workflow](skills/git-workflow/SKILL.md) | Git 分支策略、提交规范、rebase/squash 最佳实践 | 入门 | 原创 |
+| [code-review-assistant](skills/code-review-assistant/SKILL.md) | 提交前代码审查：预审问题发现、分类、修复建议 | 进阶 | 原创 |
+| [template-scaffolder](skills/template-scaffolder/SKILL.md) | 项目模板生成器：Node/React/Python 项目骨架快速搭建 | 入门 | 原创 |
+| [prompt-optimizer](skills/prompt-optimizer/SKILL.md) | Claude Code prompt 优化：从模糊需求到精准指令 | 进阶 | 原创 |
 
 ## 安装
 

@@ -1,6 +1,6 @@
 ---
 name: prompt-optimizer
-description: Claude Code prompt 优化：从模糊需求到精准指令，含结构化写作模板、上下文组织、迭代改进策略
+description: Claude Code prompt 优化：从模糊需求到精准指令，含模板、上下文组织、迭代策略
 source:
   type: original
   repo: skills-repo/productivity-master

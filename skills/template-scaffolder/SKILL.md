@@ -1,6 +1,6 @@
 ---
 name: template-scaffolder
-description: 项目模板生成器，快速搭建 Node/React/Python/CLI 项目骨架，含目录结构、配置文件、CI 模板
+description: 项目模板生成器，快速搭建 Node/React/Python/CLI 项目骨架，含目录和 CI 配置
 source:
   type: original
   repo: skills-repo/productivity-master

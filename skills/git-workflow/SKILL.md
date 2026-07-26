@@ -1,6 +1,6 @@
 ---
 name: git-workflow
-description: Git 分支策略、提交规范、rebase/squash 最佳实践，面向个人和小团队的高效 Git 工作流
+description: Git 分支策略、提交规范、rebase/squash 最佳实践，面向个人和小团队的 Git 工作流
 source:
   type: original
   repo: skills-repo/productivity-master

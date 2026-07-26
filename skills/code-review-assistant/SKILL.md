@@ -1,6 +1,6 @@
 ---
 name: code-review-assistant
-description: 代码审查自动化：PR 提交前预审、问题分类（安全/性能/逻辑/风格）、修复建议生成
+description: 代码审查自动化：PR 预审、问题分类（安全/性能/逻辑/风格）、修复建议
 source:
   type: original
   repo: skills-repo/productivity-master

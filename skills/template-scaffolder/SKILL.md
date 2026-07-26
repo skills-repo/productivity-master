@@ -1,66 +1,56 @@
 ---
 name: template-scaffolder
-description: 项目模板生成器，快速搭建 Node/React/Python/CLI 项目骨架，含目录和 CI 配置
+description: 项目工作流分析与蓝图生成：自动检测架构模式、技术栈，生成实现模板
 source:
-  type: original
+  type: derived
   repo: skills-repo/productivity-master
   path: skills/template-scaffolder/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/github/awesome-copilot/project-workflow-analysis-blueprint-generator
 metadata:
-  category: 脚手架
+  category: 项目模板
   platform: 通用
   difficulty: 入门
 ---
 
-# 模板脚手架
+# 项目工作流与模板生成
 
-> 跳过项目初始化 boilerplate，一键生成标准化项目骨架。支持 Node、React、Python、CLI 等常见项目类型。
+> 自动检测项目架构模式和技术栈，生成端到端实现蓝图，作为相似功能的开发模板。
 
 ## 能力
 
-- **多类型模板**：Node.js 库、React 应用、Python 包、CLI 工具、Monorepo
-- **标准配置**：TypeScript/ESLint/Prettier、pytest/black、CI workflow 文件
-- **目录结构**：按最佳实践自动生成合理的目录布局
-- **依赖管理**：package.json / pyproject.toml 初始配置
-- **Git 初始化**：.gitignore、.gitattributes 自动生成
+- **架构检测**：自动识别分层/Clean/CQRS/Microservices/MVC/MVVM 模式
+- **技术栈识别**：.NET/Java/Spring/Node.js/Python/React/Angular 自动检测
+- **工作流文档**：入口 → 服务层 → 数据访问 → 错误处理 → 测试全覆盖
+- **序列图生成**：请求/响应流程的可视化时序图
+- **测试模式**：单元测试、集成测试、端到端测试策略
 
 ## 使用方式
 
 ```
-/template-scaffold 创建一个 TypeScript CLI 项目
-/template-scaffold 初始化一个 React 全栈应用（前端+API）
-/template-scaffold 搭建 Python 数据分析项目骨架
+/template-scaffolder 分析这个项目的架构，生成新功能开发模板
+/template-scaffolder 为这个 API 端点生成完整的实现蓝图
+/template-scaffolder 记录 3 个代表性工作流作为团队模板
 ```
-
-## 支持的项目类型
-
-| 类型 | 技术栈 | 特点 |
-|------|--------|------|
-| `node-lib` | TypeScript + Vitest + tsup | npm 库发布就绪 |
-| `react-app` | React + Vite + Tailwind | SPA 开箱即用 |
-| `nextjs-full` | Next.js + Prisma + Auth.js | 全栈应用模板 |
-| `python-pkg` | Python + pytest + ruff | PyPI 发布就绪 |
-| `cli-tool` | TypeScript + Commander + ink | CLI 工具模板 |
-| `monorepo` | pnpm workspace + Turborepo | 多包项目管理 |
 
 ## 工作流
 
-1. 确认项目类型和技术栈偏好
-2. 生成目录结构和所有基础文件
-3. 写入配置（TSConfig、ESLint、CI workflow）
-4. 初始化 Git 仓库
-5. 输出项目启动指引
+1. 检测项目技术栈和架构模式
+2. 选择 1-5 个代表性端到端工作流
+3. 逐层分析：入口点 → 业务逻辑 → 数据访问 → 错误处理
+4. 生成实现蓝图（含代码结构和测试模式）
+5. 输出为可复用的开发模板
 
 ## 适用场景
 
-- 新项目快速启动，避免手动搭建
-- Hackathon 或原型快速出活
-- 团队统一项目初始化标准
-- 学习新框架时获得规范的起始代码
+- 新成员上手项目的架构指引
+- 标准化功能开发流程
+- 技术文档自动生成
+- 微服务间调用关系梳理
 
 ## 限制
 
-- 模板为通用最佳实践，高度定制需手动修改
-- 不包含业务逻辑代码（仅骨架）
-- 框架大版本更新可能导致模板过时，需定期维护
+- 生成的是蓝图模板，不是可直接运行的脚手架代码
+- 复杂项目需人工确认检测到的架构模式
+- 不涉及 CI/CD 和部署配置

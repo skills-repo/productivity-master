@@ -1,64 +1,57 @@
 ---
 name: git-workflow
-description: Git 分支策略、提交规范、rebase/squash 最佳实践，面向个人和小团队的 Git 工作流
+description: Git 工作流：Trunk-Based 开发、原子提交、语义化版本、Changelog
 source:
-  type: original
+  type: derived
   repo: skills-repo/productivity-master
   path: skills/git-workflow/SKILL.md
   version: 1.0.0
   updated: 2026-07-26
+  url: https://skills.sh/addyosmani/agent-skills/git-workflow-and-versioning
 metadata:
-  category: Git
+  category: 版本控制
   platform: 通用
   difficulty: 入门
 ---
 
-# Git 工作流专家
+# Git 工作流与版本管理
 
-> 为个人和小团队制定高效的 Git 工作流：分支策略选择、提交信息规范、rebase/squash 操作、冲突解决。
+> Git 是安全网——提交是存档点，分支是沙盒，历史是文档。面向 AI 辅助开发时代的版本控制规范。
 
 ## 能力
 
-- **分支策略推荐**：根据项目规模和发布节奏推荐合适的分支模型（Trunk-based / GitFlow-lite / GitHub Flow）
-- **提交信息生成**：Conventional Commits 格式自动生成，含 scope 建议
-- **Rebase/Squash 指导**：交互式 rebase 操作、Squash 合并策略、历史清理
-- **冲突解决**：分析冲突类型（逻辑/格式/结构），提供分步骤解决方案
-- **Git Hooks**：pre-commit、commit-msg、pre-push hooks 配置
+- **Trunk-Based 开发**：main 始终可部署，短周期功能分支（1-3 天）
+- **原子提交**：每个提交做一件事，可独立回滚
+- **提交信息规范**：Conventional Commits 格式（feat/fix/refactor/docs）
+- **分支策略**：功能分支 → PR → squash/rebase → main
+- **语义化版本**：major.minor.patch 的选择规则
+- **Changelog 生成**：从提交历史生成结构化变更日志
 
 ## 使用方式
 
 ```
-/git-workflow 分析当前仓库的提交历史，给优化建议
-/git-workflow 帮我 squash 最近 5 个 commit 为一个
-/git-workflow 推荐适合 3 人小团队的分支策略
+/git-workflow 帮我规划这个功能的分支和提交策略
+/git-workflow 为这次的变更生成合适的提交信息
+/git-workflow 这次该升 major、minor 还是 patch？
 ```
 
 ## 工作流
 
-1. 分析当前仓库状态（分支结构、提交历史、团队规模）
-2. 推荐匹配的分支策略和工作流
-3. 生成 Conventional Commits 格式的提交信息
-4. 指导 rebase/squash 操作步骤
-5. 验证操作结果
-
-## 分支策略快速选择
-
-| 团队规模 | 发布频率 | 推荐策略 |
-|---------|---------|---------|
-| 1-3 人 | 每日 | Trunk-based（main 直推） |
-| 2-5 人 | 每周 | GitHub Flow（feature branch） |
-| 5-10 人 | 双周/月 | GitFlow-lite（main + develop） |
-| 10+ | 定期 | 完整 GitFlow |
+1. 从 main 拉取最新，创建功能分支
+2. 实现切片 → 测试 → 验证 → 原子提交 → 下一片
+3. 每个提交信息包含：类型 + 范围 + 描述
+4. 功能完成后 push → PR → review → squash merge
+5. 发布时打 tag，生成 Changelog
 
 ## 适用场景
 
-- 新项目初始化时的 Git 工作流设定
-- 提交历史混乱需要清理
-- 团队协作中出现频繁冲突需要优化策略
-- 准备开源项目的 CONTRIBUTING.md
+- 个人项目版本管理
+- 小团队协作 Git 规范
+- 发布和版本号管理
+- AI Agent 辅助编码时的提交策略
 
 ## 限制
 
-- 不涉及 Git 服务器管理（GitHub/GitLab 运维）
-- 复杂 Monorepo 策略不在范围内
-- 推荐策略需结合项目实际调整
+- 不涉及大型团队的 GitFlow 模式
+- 不涉及 monorepo 管理（lerna/nx）
+- 不涉及 CI/CD 流水线配置

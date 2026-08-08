@@ -1,0 +1,9 @@
+{
+  "_comment": "template-scaffolder 子技能的项目模板清单规范，被 scripts/check_project_template.py 读取执行。脚本读取时跳过所有 '_' 开头的键。修改后请重跑 --check-rules 自检。",
+  "required_files": ["README.md", "LICENSE", "src/", "tests/"],
+  "readme_required_sections": ["# ", "## 安装", "## 使用", "## 许可"],
+  "readme_forbidden_patterns": ["lorem ipsum", "TODO: 补充"],
+  "missing_tokens": ["TODO", "FIXME", "XXX", "HACK"],
+  "ignore_paths": [".git", "node_modules", "__pycache__", ".venv", "dist", "build"],
+  "text_extensions": [".md", ".txt", ".py", ".js", ".ts", ".json", ".yaml", ".yml", ".toml", ".cfg", ".ini", ".sh", ".html", ".css"]
+}

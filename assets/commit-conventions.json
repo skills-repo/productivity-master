@@ -1,0 +1,17 @@
+{
+  "_comment": "git-workflow 子技能的规则集，被 scripts/check_commit_conventions.py 读取执行。脚本读取时会跳过所有 '_' 开头的键（注释/元信息）。修改本文件后请重跑 --check-rules 自检。",
+  "commit_types": ["feat", "fix", "docs", "style", "refactor", "perf", "test", "build", "ci", "chore", "revert"],
+  "scope_allowed": true,
+  "scope_pattern": "^[a-z0-9][a-z0-9._/-]*$",
+  "breaking_allowed": true,
+  "subject_max_len": 72,
+  "subject_min_len": 4,
+  "require_body_for_breaking": true,
+  "branch_regex": "^(feature|fix|chore|docs|refactor|test|ci|build|release|hotfix)/[a-z0-9][a-z0-9-]*$",
+  "branch_forbidden_chars": "[A-Z_\\s]",
+  "version_bump_rules": {
+    "major": "存在 BREAKING CHANGE 或不兼容 API 变更",
+    "minor": "feat 类型的新功能（向后兼容）",
+    "patch": "fix / docs / style / chore 等向后兼容修复"
+  }
+}

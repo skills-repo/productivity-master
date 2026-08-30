@@ -190,3 +190,11 @@ python3 eval_prompt.py --cases eval_orders.json --prompt prompt_v3.txt
 - [ ] 系统提示是「行为契约」而非知识堆
 - [ ] 评估同时记录通过率 / token / 延迟三项
 - [ ] 评估集冻结后才迭代 prompt
+
+## 12. 相关子技能与层次边界（L2 → L3）
+
+本文档是 L2 评估方法论层，落地调用 L3 子技能：
+
+- `skills/prompt-optimizer/SKILL.md` — Prompt 能力地图（系统提示/上下文/输出格式/few-shot/评估）
+
+边界：本文档只补「怎么用可复现评估证明 prompt 更优」的判断层；具体能力调用与格式约束在子技能，本文档不复制。

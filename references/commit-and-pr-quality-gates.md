@@ -177,3 +177,12 @@ jobs:
 
 **不要**在 tag 之后又往 main 追加「忘记的」fix 却不升版本——已发布的版本号不可复用，必须升 PATCH 重新发。
 
+## 12. 相关子技能与层次边界（L2 → L3）
+
+本文档是 L2 决策层，落地调用以下 L3 子技能：
+
+- `skills/git-workflow/SKILL.md` — 怎么提（Trunk-Based、原子提交、语义化版本）
+- `skills/code-review-assistant/SKILL.md` — 怎么审（五维框架、分级口径）
+
+边界：本文档只补「何时提 / 升哪个版本 / squash 还是 merge / 审查拦哪类」的判断层；具体提交命令与逐维审查流程在对应子技能，本文档不复制。
+

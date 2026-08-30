@@ -55,3 +55,7 @@ metadata:
 - 不涉及大型团队的 GitFlow 模式
 - 不涉及 monorepo 管理（lerna/nx）
 - 不涉及 CI/CD 流水线配置
+
+## 相关参考（Playbook）
+
+提交/分支/PR 质量门禁的决策树、版本号矩阵与审查分级口径见 `references/commit-and-pr-quality-gates.md`。

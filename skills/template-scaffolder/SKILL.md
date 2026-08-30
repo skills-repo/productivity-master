@@ -54,3 +54,7 @@ metadata:
 - 生成的是蓝图模板，不是可直接运行的脚手架代码
 - 复杂项目需人工确认检测到的架构模式
 - 不涉及 CI/CD 和部署配置
+
+## 相关参考（Playbook）
+
+架构模式检测置信度、模板粒度选型与「要不要生成模板」的决策树见 `references/template-architecture-selection.md`。

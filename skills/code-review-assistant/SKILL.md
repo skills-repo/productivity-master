@@ -53,3 +53,7 @@ metadata:
 - 不替代自动化 lint/测试工具
 - 不涉及业务逻辑正确性验证（需领域知识）
 - 审查速度受代码量影响，大 PR 建议分批
+
+## 相关参考（Playbook）
+
+提交/分支/PR 质量门禁里 PR 审查「该拦什么 / 该放什么」的分级口径与放行标准见 `references/commit-and-pr-quality-gates.md`。

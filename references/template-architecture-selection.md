@@ -149,3 +149,11 @@ python3 scripts/check_project_template.py --target ./generated-service
 - [ ] 用 `check_project_template.py` 扫过残留 TODO
 - [ ] 参数化 meta 仅覆盖技术栈相关部分
 - [ ] 生成产物已批量跑模板核查且全通过
+
+## 12. 相关子技能与层次边界（L2 → L3）
+
+本文档是 L2 选型判断层，落地调用 L3 子技能：
+
+- `skills/template-scaffolder/SKILL.md` — 架构检测与蓝图生成（具体模式识别、技术栈检测）
+
+边界：本文档只补「检测到模式后要不要生成模板、生成哪种粒度」的判断层；具体检测与生成流程在子技能，本文档不复制。

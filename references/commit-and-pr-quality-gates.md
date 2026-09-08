@@ -46,7 +46,7 @@
 ```
 
 **易错点**：`refactor` 不一定安全。重构若改变对外函数签名 → 视为 BREAKING（升 MAJOR）。
-依赖 `scripts/check_commit_conventions.py` 可在 CI 里强制类型合法、主题行不超长、分支名匹配 `feature/*` 等约定（规则见 `assets/commit-conventions.json`）。
+依赖 [scripts/check_commit_conventions.py](../scripts/check_commit_conventions.py) 可在 CI 里强制类型合法、主题行不超长、分支名匹配 `feature/*` 等约定（规则见 [assets/commit-conventions.json](../assets/commit-conventions.json)）。
 
 ```bash
 # 本地提交前自检（逐行喂入待提交主题）
@@ -141,7 +141,7 @@ jobs:
             --branch "${{ github.head_ref }}"
 ```
 
-> 注意：`scripts/` 在本仓库内，CI 需先 checkout 本仓库或把脚本复制进被检项目。规则文件 `assets/commit-conventions.json` 是脚本的单一事实来源，团队改约定只改这一处。
+> 注意：`scripts/` 在本仓库内，CI 需先 checkout 本仓库或把脚本复制进被检项目。规则文件 [assets/commit-conventions.json](../assets/commit-conventions.json) 是脚本的单一事实来源，团队改约定只改这一处。
 
 ## 8. 典型坑与规避（续）
 
@@ -181,8 +181,8 @@ jobs:
 
 本文档是 L2 决策层，落地调用以下 L3 子技能：
 
-- `skills/git-workflow/SKILL.md` — 怎么提（Trunk-Based、原子提交、语义化版本）
-- `skills/code-review-assistant/SKILL.md` — 怎么审（五维框架、分级口径）
+- [skills/git-workflow/SKILL.md](../skills/git-workflow/SKILL.md) — 怎么提（Trunk-Based、原子提交、语义化版本）
+- [skills/code-review-assistant/SKILL.md](../skills/code-review-assistant/SKILL.md) — 怎么审（五维框架、分级口径）
 
 边界：本文档只补「何时提 / 升哪个版本 / squash 还是 merge / 审查拦哪类」的判断层；具体提交命令与逐维审查流程在对应子技能，本文档不复制。
 

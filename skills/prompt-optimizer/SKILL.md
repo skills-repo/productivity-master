@@ -57,4 +57,4 @@ metadata:
 
 ## 相关参考（Playbook）
 
-可复现的 Prompt 评估协议（评估集设计、Token 预算、few-shot 选择、迭代记录表）见 `references/prompt-evaluation-protocol.md`。
+可复现的 Prompt 评估协议（评估集设计、Token 预算、few-shot 选择、迭代记录表）见 [references/prompt-evaluation-protocol.md](../../references/prompt-evaluation-protocol.md)。

@@ -45,7 +45,7 @@
 | 多服务同构 | 参数化模板骨架（变量占位） | 一处改全局生效 |
 | 仅文档归档 | 工作流文档 + 序列图 | 不碰代码 |
 
-本仓库 `assets/project-template-manifest.json` 就是「标准项目应包含什么」的清单规范，可被 `scripts/check_project_template.py` 自动核查（必需文件、README 章节、残留 TODO）。生成模板时直接对齐这份清单，产出即合规。
+本仓库 [assets/project-template-manifest.json](../assets/project-template-manifest.json) 就是「标准项目应包含什么」的清单规范，可被 [scripts/check_project_template.py](../scripts/check_project_template.py) 自动核查（必需文件、README 章节、残留 TODO）。生成模板时直接对齐这份清单，产出即合规。
 
 ## 4. 蓝图模板结构（推荐骨架）
 
@@ -115,7 +115,7 @@ python3 scripts/check_project_template.py --target ./generated-service
 # 期望输出 [OK]；若报缺失 README 章节或残留 TODO，回去补模板
 ```
 
-把这条命令接进生成流程的收尾，保证「生成的每个项目开箱即合规」。清单文件 `assets/project-template-manifest.json` 是唯一事实来源，团队调整「标准项目该有什么」只改它。
+把这条命令接进生成流程的收尾，保证「生成的每个项目开箱即合规」。清单文件 [assets/project-template-manifest.json](../assets/project-template-manifest.json) 是唯一事实来源，团队调整「标准项目该有什么」只改它。
 
 ## 9. 实战：从零到蓝图的一天
 
@@ -154,6 +154,6 @@ python3 scripts/check_project_template.py --target ./generated-service
 
 本文档是 L2 选型判断层，落地调用 L3 子技能：
 
-- `skills/template-scaffolder/SKILL.md` — 架构检测与蓝图生成（具体模式识别、技术栈检测）
+- [skills/template-scaffolder/SKILL.md](../skills/template-scaffolder/SKILL.md) — 架构检测与蓝图生成（具体模式识别、技术栈检测）
 
 边界：本文档只补「检测到模式后要不要生成模板、生成哪种粒度」的判断层；具体检测与生成流程在子技能，本文档不复制。

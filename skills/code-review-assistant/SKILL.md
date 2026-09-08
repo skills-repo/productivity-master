@@ -56,4 +56,4 @@ metadata:
 
 ## 相关参考（Playbook）
 
-提交/分支/PR 质量门禁里 PR 审查「该拦什么 / 该放什么」的分级口径与放行标准见 `references/commit-and-pr-quality-gates.md`。
+提交/分支/PR 质量门禁里 PR 审查「该拦什么 / 该放什么」的分级口径与放行标准见 [references/commit-and-pr-quality-gates.md](../../references/commit-and-pr-quality-gates.md)。

@@ -49,4 +49,4 @@ metadata:
 
 ## 深层方法
 
-决策树、命令、记忆文件模板与踩坑清单见 `references/memory-keeper.md`。
+决策树、命令、记忆文件模板与踩坑清单见 [references/memory-keeper.md](../../references/memory-keeper.md)。

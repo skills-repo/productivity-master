@@ -57,4 +57,4 @@ metadata:
 
 ## 相关参考（Playbook）
 
-架构模式检测置信度、模板粒度选型与「要不要生成模板」的决策树见 `references/template-architecture-selection.md`。
+架构模式检测置信度、模板粒度选型与「要不要生成模板」的决策树见 [references/template-architecture-selection.md](../../references/template-architecture-selection.md)。

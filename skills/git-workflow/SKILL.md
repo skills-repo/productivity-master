@@ -58,4 +58,4 @@ metadata:
 
 ## 相关参考（Playbook）
 
-提交/分支/PR 质量门禁的决策树、版本号矩阵与审查分级口径见 `references/commit-and-pr-quality-gates.md`。
+提交/分支/PR 质量门禁的决策树、版本号矩阵与审查分级口径见 [references/commit-and-pr-quality-gates.md](../../references/commit-and-pr-quality-gates.md)。

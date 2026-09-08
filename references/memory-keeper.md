@@ -1,6 +1,6 @@
 # 记忆管家 · 深层 Playbook
 
-> 配套 `skills/memory-keeper/SKILL.md`。本文写「子技能装不下的」决策方法论：
+> 配套 [skills/memory-keeper/SKILL.md](../skills/memory-keeper/SKILL.md)。本文写「子技能装不下的」决策方法论：
 > 何时该写记忆、三层记忆文件怎么分、Zettelkasten 怎么连、间隔回顾怎么排、以及踩坑清单。
 > 不是 SKILL.md 的复制，是它背后的判断与操作细节。
 

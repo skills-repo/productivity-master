@@ -1,6 +1,6 @@
 # Productivity Master — 开发者生产力技能库
 
-> 面向个人和小团队的开发者效率工具集，覆盖 Git 工作流、代码审查、项目模板、Prompt 优化、个人知识管理五大场景。
+> 面向个人和小团队的开发者效率工具集，覆盖 Git 工作流、代码审查、项目模板、Prompt 优化、个人知识管理、代码库重构与架构演进六大场景。
 
 ## 架构说明
 
@@ -8,7 +8,7 @@
 
 - `SKILL.md` — L1 路由层，只做能力索引，不写方法论
 - `references/` — L2 深层 playbook（提交/PR 质量门禁、Prompt 评估协议、模板架构选型、记忆管家）
-- `skills/` — L3 五个细粒度子技能，可单独安装
+- `skills/` — L3 六个细粒度子技能，可单独安装
 - `scripts/` — L4 确定性质量门禁脚本（提交约定 / 项目模板核查）
 - `assets/` — L5 可复用规范与清单（提交约定、模板清单）
 
@@ -21,6 +21,7 @@
 | [template-scaffolder](skills/template-scaffolder/SKILL.md) | 项目工作流分析与蓝图生成：架构检测、技术栈识别 | 入门 | [衍生](https://skills.sh/github/awesome-copilot/project-workflow-analysis-blueprint-generator) |
 | [prompt-optimizer](skills/prompt-optimizer/SKILL.md) | LLM Prompt 架构设计：系统提示、上下文管理、评估迭代 | 进阶 | [衍生](https://skills.sh/davila7/claude-code-templates/prompt-engineer) |
 | [memory-keeper](skills/memory-keeper/SKILL.md) | 个人知识管理与持久记忆：跨会话记忆、第二大脑/Zettelkasten、记忆文件（CLAUDE.md/MEMORY.md）维护 | 进阶 | 原创 |
+| [codebase-refactoring](skills/codebase-refactoring/SKILL.md) | 代码库重构与架构演进：重构时机判断、接缝先行的安全小步、技术债定价与偿还 | 进阶 | [衍生](https://skills.sh/mattpocock/skills/improve-codebase-architecture) |
 
 ## 安装
 
@@ -38,6 +39,7 @@ npx skills add skills-repo/productivity-master@code-review-assistant -g -y
 npx skills add skills-repo/productivity-master@template-scaffolder -g -y
 npx skills add skills-repo/productivity-master@prompt-optimizer -g -y
 npx skills add skills-repo/productivity-master@memory-keeper -g -y
+npx skills add skills-repo/productivity-master@codebase-refactoring -g -y
 ```
 
 ## 内置脚本

@@ -1,13 +1,14 @@
 ---
 name: productivity-master
 description: >-
-  开发者生产力技能库：覆盖 Git 提交/分支规范与版本管理、多维度代码审查、LLM Prompt 工程优化、项目架构检测与模板生成四大场景，并附可直接运行的质量门禁脚本。
-  当用户说"提交规范"、"代码审查"、"优化 prompt"、"项目模板"、"分支命名"、"changelog"时触发。
+  开发者生产力技能库：覆盖 Git 提交/分支规范与版本管理、多维度代码审查、LLM Prompt 工程优化、项目架构检测与模板生成、已有代码库的重构与架构演进五大场景，并附可直接运行的质量门禁脚本。
+  当用户说"提交规范"、"代码审查"、"优化 prompt"、"项目模板"、"分支命名"、"changelog"、"重构"、"技术债"时触发。
 agent_created: true
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: 生产力
   difficulty: 进阶
+  updated: 2026-11-02
   architecture: superpower
 ---
 
@@ -23,6 +24,7 @@ metadata:
 - 合并 PR 前做多维度代码审查（正确性/可读性/架构/安全/性能）时
 - 输出不稳定的 Prompt 需要系统评估与迭代优化时
 - 需要把项目架构沉淀成可复用模板或蓝图时
+- 已有代码改起来越来越贵，要判断该不该重构、怎么拆成每步都绿色的小步时
 - 想用脚本自动校验提交约定 / 项目模板清单（CI 门禁）时
 - 团队要统一 Git 与代码质量规范时
 - 需要把跨会话的偏好、决策、项目上下文沉淀成持久记忆，或维护 `CLAUDE.md`/`MEMORY.md` 记忆文件时
@@ -40,6 +42,7 @@ metadata:
 | Prompt 架构与输出格式优化（细粒度调用） | [skills/prompt-optimizer/SKILL.md](skills/prompt-optimizer/SKILL.md) | prompt optimizer 系统提示 few-shot 输出格式 |
 | 项目工作流分析与模板生成（细粒度调用） | [skills/template-scaffolder/SKILL.md](skills/template-scaffolder/SKILL.md) | template scaffolder 架构检测 蓝图 工作流 |
 | 记忆/知识管理（细粒度调用） | [skills/memory-keeper/SKILL.md](skills/memory-keeper/SKILL.md) | memory-keeper 记住 知识库 笔记 回顾 inbox 跨会话 |
+| 已有代码库重构与架构演进（细粒度调用） | [skills/codebase-refactoring/SKILL.md](skills/codebase-refactoring/SKILL.md) | refactor 重构 技术债 technical debt seam deep module churn 架构演进 |
 
 ## 内置脚本（确定性、可重复执行）
 
@@ -78,3 +81,4 @@ python3 scripts/check_project_template.py --target ./my-project  # 核查项目�
 - 办公文档处理 → `skills-repo/office-master`
 - 本仓库所有子技能来源见各自 `source` 字段，均为 skills.sh 社区成熟技能衍生
 - `memory-keeper`（个人知识/持久记忆）与 `prompt-optimizer` 的「LLM 上下文预算」正交：前者管人/项目的长期记忆资产，后者管单次 Prompt 的窗口效率，互不重叠
+- `codebase-refactoring` 管**存量代码**的结构演进，`code-review-assistant` 管**本次 PR** 的增量审查，`template-scaffolder` 管**新项目**的骨架生成；重构拆出的每个小步仍要交审查

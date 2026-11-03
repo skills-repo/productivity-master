@@ -183,6 +183,7 @@ jobs:
 
 - [skills/git-workflow/SKILL.md](../skills/git-workflow/SKILL.md) — 怎么提（Trunk-Based、原子提交、语义化版本）
 - [skills/code-review-assistant/SKILL.md](../skills/code-review-assistant/SKILL.md) — 怎么审（五维框架、分级口径）
+- [skills/codebase-refactoring/SKILL.md](../skills/codebase-refactoring/SKILL.md) — 存量代码怎么演进（接缝先行、小步计划）；其拆出的每个小步仍按本文档第 1/3/4 节走提交与审查门禁
 
-边界：本文档只补「何时提 / 升哪个版本 / squash 还是 merge / 审查拦哪类」的判断层；具体提交命令与逐维审查流程在对应子技能，本文档不复制。
+边界：本文档只补「何时提 / 升哪个版本 / squash 还是 merge / 审查拦哪类」的判断层；具体提交命令、逐维审查流程与重构拆步方法在对应子技能，本文档不复制。
 

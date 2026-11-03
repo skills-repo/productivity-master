@@ -81,3 +81,4 @@ metadata:
 - [skills/code-review-assistant/SKILL.md](../code-review-assistant/SKILL.md) 审**这一个 PR** 写得对不对（增量、评审视角）；本技能管**代码库随时间怎么演进**（存量、结构视角）。重构后的每个小步仍要交给它审查。
 - [skills/template-scaffolder/SKILL.md](../template-scaffolder/SKILL.md) 为**新项目**生成骨架；本技能处理**已有代码**的结构问题，不产出模板。
 - 提交拆分与版本升级口径 → [skills/git-workflow/SKILL.md](../git-workflow/SKILL.md)。
+- 重构小步的提交门禁、版本号判定与 PR 审查口径见 [references/commit-and-pr-quality-gates.md](../../references/commit-and-pr-quality-gates.md)；其中「`refactor` 不一定安全」正是重构泄漏行为变更时的拦截项。
